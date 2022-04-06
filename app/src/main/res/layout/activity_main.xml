@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ff0038"
     tools:ignore="HardcodedText"
+    android:background="@color/almostBlack"
     tools:context=".MainActivity">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -52,12 +52,14 @@
 
         <Button
             style="@style/buttonNumber"
-            android:textColor="@color/red"
+            android:textColor="@color/black"
             android:onClick="allClearAction"
-            android:text="AC"/>
+            android:text="AC"
+            android:elevation="20dp"
+            android:shadowColor="@color/white"/>
         <Button
             style="@style/buttonNumber"
-            android:textColor="@color/red"
+            android:textColor="@color/black"
             android:onClick="backSpaceAction"
             android:text="⌫"/>
         <Button
@@ -133,13 +135,15 @@
         <Button
             style="@style/buttonNumber"
             android:text="0"/>
+
         <Button
             style="@style/buttonNumber"
             android:layout_weight="2"
-            android:background="#ff0038"
-            android:textSize="40sp"
+            android:background="@drawable/custom_round_button"
             android:onClick="equalsAction"
-            android:text="=" />
+            android:text="="
+            android:textColor="@color/black"
+            android:textSize="40sp" />
 
     </LinearLayout>
 
